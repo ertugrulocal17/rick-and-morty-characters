@@ -1,3 +1,29 @@
+/*import React, {useState,useEffect} from 'react';
+import { Link } from 'react-router-dom';
+import styles from './Card.module.css';
+
+import { useLazyQuery } from '@apollo/client';
+import {GET_CHARACTERS} from './queries'
+
+function Card(){
+  const [btnVisible,setBtnIsVisible] = useState(true);
+  const [getCharacters,{loading,data,error}] = useLazyQuery(GET_CHARACTERS);
+
+  useEffect(() => {
+  if(!loading && data){
+    setBtnIsVisible(false);
+  }
+  }, [loading,data])
+
+  return (
+    <div>
+      
+    </div>
+  )
+  
+}
+*/
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -69,3 +95,6 @@ function Card() {
 }
 
 export default Card;
+
+
+
